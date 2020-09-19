@@ -1,4 +1,6 @@
 $(function() {
+   
+    // CAROUSEL PLAY/PAUSE BUTTON
     $(".carousel").carousel( { interval: 2000 } );
     $("#carouselButton").click(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
@@ -11,4 +13,17 @@ $(function() {
             $("#carouselButton").children("i").addClass("fa-pause"); 
         }
     });
+
+    // RESERVE BUTTON 
+    $("#reserveButton").click(function(){
+        $('#reserveModal').modal("show");
+    });
+    
+    // ID BUTTON
+    $("#loginButton").click(function(){
+        $('#loginModal').modal("show");
+    });
+
+
+
 });
